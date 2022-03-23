@@ -27,9 +27,12 @@ public class Main {
         System.out.println(String.valueOf(list));
         System.out.println(list.indexOf(7));
         System.out.println("Last index of 4 is " + list.lastIndexOf(4));
-        Iterator itr = list.iterator();
-        while(itr.hasNext()){
-            System.out.print(itr.next());
-        }
+//        Iterator itr = list.iterator();
+//        while(itr.hasNext()){
+//            System.out.print(itr.next());
+//        }
+        Collections.reverse(list);
+        System.out.println(String.valueOf(list));
+
     }
 }

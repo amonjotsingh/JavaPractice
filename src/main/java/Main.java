@@ -34,5 +34,10 @@ public class Main {
         Collections.reverse(list);
         System.out.println(String.valueOf(list));
         Collections.synchronizedList(list);
+        List<String> list2 = Arrays.asList("Batman","Superman","Aquaman");
+        Collections.sort(list2);
+        System.out.println(list2.toString());
+        System.out.println(list.subList(3, 5).toString());
+
     }
 }

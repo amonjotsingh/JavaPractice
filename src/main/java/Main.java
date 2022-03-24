@@ -33,6 +33,6 @@ public class Main {
 //        }
         Collections.reverse(list);
         System.out.println(String.valueOf(list));
-
+        Collections.synchronizedList(list);
     }
 }

@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Main {
+public class ArrayAndList {
     public static void main(String[] args) {
 // ASLIST METHOD
         //        String[] arr = {"Hello", "my friend", "how are you"};

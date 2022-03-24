@@ -13,8 +13,7 @@ public class PlayerMain {
         list.add(new Player("Manu", 28));
         list.add(new Player("Batman", 15));
         System.out.println(list.toString());
-        Compare c = new Compare();
-        Collections.sort(list,c);
+        Collections.sort(list);
         System.out.println(list.toString());
     }
 

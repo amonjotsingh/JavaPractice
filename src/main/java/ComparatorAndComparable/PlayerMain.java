@@ -4,7 +4,7 @@ import java.util.*;
 
 public class PlayerMain {
     public static void main(String[] args) {
-
+//
 //        List<Player> list = new ArrayList();
 //        list.add(new Player("jot", 25));
 //        list.add(new Player("Manu", 28));
@@ -24,13 +24,18 @@ public class PlayerMain {
 //            else return -1;
 //        });
 //        System.out.println(list.toString());
+//
+//        Set<Player> set = new TreeSet<>();
+//        set.add(new Player("jot", 25));
+//        set.add(new Player("Superman", 28));
+//        set.add(new Player("Batman", 15));
+//        set.add(new Player("Batman", 15));
+        Player p1 = new Player("Jot", 25);
+        Player p2 = new Player("Jot", 25);
+        System.out.println("If two objects are equal: " +p1.equals(p2));
+        System.out.println(p1.hashCode()== p2.hashCode());
 
-        Set<Player> set = new TreeSet<>();
-        set.add(new Player("jot", 25));
-        set.add(new Player("Superman", 28));
-        set.add(new Player("Batman", 15));
-        set.add(new Player("Batman", 15));
-        System.out.println(set.toString());
+//        System.out.println(set.toString());
 
     }
 

@@ -44,10 +44,6 @@ public class Player implements Comparable<Player> {
         return age == player.age && Objects.equals(name, player.name);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age);
-    }
 
     @Override
     public int compareTo(Player o) {

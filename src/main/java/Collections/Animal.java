@@ -1,4 +1,4 @@
-package lamdapractice;
+package Collections;
 
 public class Animal {
     String name;

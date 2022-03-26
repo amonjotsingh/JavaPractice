@@ -1,6 +1,7 @@
 package ComparatorAndComparable;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Player implements Comparable<Player> {
     private String name;
@@ -36,10 +37,20 @@ public class Player implements Comparable<Player> {
     }
 
     @Override
-    public int compareTo(Player one) {
-        if (this.age > one.age) return 1;
-        else
-            return -1;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Player player = (Player) o;
+        return age == player.age && Objects.equals(name, player.name);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
+    @Override
+    public int compareTo(Player o) {
+        return this.age - o.age;
     }
 }

@@ -10,11 +10,9 @@ public class PlayerMain {
 //        list.add(new Player("Manu", 28));
 //        list.add(new Player("Batman", 15));
 //        System.out.println(list.toString());
-
         Comparator<Player> com = new Comparator<Player>() {
-            @Override
             public int compare(Player o1, Player o2) {
-                return (o1.getName().compareTo(o2.getName()));
+                return o1.getAge() - o2.getAge();
             }
         };
 //        Collections.sort(list, com);
@@ -29,10 +27,10 @@ public class PlayerMain {
 
         Set<Player> set = new TreeSet<>();
         set.add(new Player("jot", 25));
-        set.add(new Player("Manu", 28));
+        set.add(new Player("Superman", 28));
+        set.add(new Player("Batman", 15));
         set.add(new Player("Batman", 15));
         System.out.println(set.toString());
-
 
     }
 

@@ -10,5 +10,7 @@ public class HashMapImp {
         System.out.println(map);
         map.replace("superman", 80, 90);
         System.out.println(map);
+        System.out.println(map.get("batman"));
+        System.out.println(map.containsKey("superman"));
     }
 }

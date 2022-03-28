@@ -20,10 +20,6 @@ public class StreamDemo {
                 .filter(player -> player.getAge() >= 20)
                 .sorted(Comparator.comparing(player -> player.getAge()))
                 .collect(Collectors.toList());
-        Iterator<Player> iterator = list1.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
-
+       list1.forEach(player -> System.out.println(player));
     }
 }

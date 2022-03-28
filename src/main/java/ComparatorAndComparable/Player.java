@@ -1,6 +1,7 @@
 package ComparatorAndComparable;
 
-import java.util.Comparator;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Player implements Comparable<Player> {
@@ -30,10 +31,7 @@ public class Player implements Comparable<Player> {
 
     @Override
     public String toString() {
-        return '[' +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ']';
+        return '[' + "name='" + name + '\'' + ", age=" + age + ']';
     }
 
     @Override
@@ -49,4 +47,5 @@ public class Player implements Comparable<Player> {
     public int compareTo(Player o) {
         return this.age - o.age;
     }
+
 }

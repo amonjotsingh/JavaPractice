@@ -30,7 +30,7 @@ public class PlayerMain {
         set.add(new Player("Superman", 28));
         set.add(new Player("Batman", 15));
         set.add(new Player("Batman", 15));
-        System.out.println(set);
+        System.out.println();
 //        Player p1 = new Player("Jot", 25);
 //        Player p2 = new Player("Jot", 25);
 //        System.out.println("If two objects are equal: " + p1.equals(p2));
